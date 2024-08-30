@@ -45,5 +45,4 @@ def update_product(product_id, name, description, price, image):
 def delete_product(producto_id):
     conn = get_db_conection()
     conn.execute('DELETE FROM products WHERE id = ?', (producto_id,))
-    conn.close()
-
+    conn.close() 
